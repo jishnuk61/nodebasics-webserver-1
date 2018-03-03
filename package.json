@@ -1,0 +1,15 @@
+{
+  "name": "web_servers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jishnu koottala",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "hbs": "^3.0.0"
+  }
+}
