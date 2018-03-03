@@ -25,9 +25,9 @@ fs.appendFile('server.log',log+'\n',(err)=>{
 console.log(``);
 next();
 });
-app.use((req,res,next)=>{
-    res.render('maintenance.hbs',{pageTitle:'Maintenance Page'});
-});
+// app.use((req,res,next)=>{
+//     res.render('maintenance.hbs',{pageTitle:'Maintenance Page'});
+// });
 app.get('/',(request,response)=>{
 
     response.render('home.hbs',{
@@ -40,6 +40,12 @@ app.get('/',(request,response)=>{
 app.get('/about',(req,res)=>{
     res.render('about.hbs',{
         pageTitle:'About Page'
+    });
+});
+
+app.get('/projects',(req,res)=>{
+    res.render('projects.hbs',{
+        pageTitle:'Projects Page'
     });
 });
 
